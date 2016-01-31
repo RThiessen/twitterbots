@@ -3,12 +3,12 @@ import datetime
 import time
 import twitter
 
-TOKEN = ""
-TOKEN_KEY = ""
+ACCESS_TOKEN = ""
+ACCESS_TOKEN_SEC = ""
+CON_KEY = ""
 CON_SEC = ""
-CON_SEC_KEY = ""
  
-my_auth = twitter.OAuth(TOKEN,TOKEN_KEY,CON_SEC,CON_SEC_KEY)
+my_auth = twitter.OAuth(ACCESS_TOKEN,ACCESS_TOKEN_SEC,CON_KEY,CON_SEC)
 twit = twitter.Twitter(auth=my_auth)
 tweet ="testing"
 twit.statuses.update(status=tweet)
